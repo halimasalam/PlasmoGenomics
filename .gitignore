@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Package build artifacts
+build/
+dist/
+*.egg-info/
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+plasmo_genomics/data/*.vcf
+plasmo_genomics/data/*.vcf

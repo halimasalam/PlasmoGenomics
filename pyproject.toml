@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plasmo-genomics"
+version = "0.1.0"
+description = "A command-line tool for processing and analyzing Plasmodium whole genome data"
+authors = [
+    {name = "Halima", email = "halimasalam66@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "click",  # If you decide to switch from argparse later
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/plasmogenomics"
+"Source" = "https://github.com/yourusername/plasmogenomics"
+
+[project.scripts]
+plasmo-genomics = "plasmo_genomics.cli:main"
