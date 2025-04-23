@@ -1,0 +1,27 @@
+PLINK v1.90p 64-bit (11 Dec 2023)
+Options in effect:
+  --allow-extra-chr
+  --bfile pruned_variants
+  --out pca_results
+  --pca
+
+Hostname: Heebee.local
+Working directory: /Users/halimaabdulsalam/Plasmodium-WGS-ARISE/PlasmoGenomics/plasmo_genomics/analysis_results/pca
+Start time: Tue Apr 22 21:02:30 2025
+
+Random number seed: 1745352150
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+224802 variants loaded from .bim file.
+5 people (0 males, 0 females, 5 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to pca_results.nosex .
+Using up to 8 threads (change this with --threads).
+Before main variant filters, 5 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.93267.
+224802 variants and 5 people pass filters and QC.
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+Warning: calculating 5 PCs, since there are only 5 samples.
+--pca: Results saved to pca_results.eigenval and pca_results.eigenvec .
+
+End time: Tue Apr 22 21:02:30 2025

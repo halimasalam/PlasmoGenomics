@@ -1,13 +1,23 @@
 #!/bin/bash
 
+# Admixture Preprocessing Pipeline 
+# Usage: ./run_admixture_pipeline.sh -i pruned_variants -c /data/chr_list.txt -m /data/chr_name_to_int.txt -o results/pca_output
+
 set -e
 
-# ====== INPUT FILES FROM CLI ======
-VCF_BFILE="$1"                  # e.g., pruned_variants
-CHR_LIST="$2"                   # e.g., data/chr_list.txt
-CHR_MAP_FILE="$3"               # e.g., data/chr_name_to_int.txt
-OUTPUT_DIR="${4:-.}"            # optional 4th arg, defaults to current directory
 
+while getopts "i:c:m:o:" opt; do
+  case $opt in
+    i) VCF_BFILE="$OPTARG" ;;                       # e.g., pruned_variants
+    c) CHR_LIST="$OPTARG" ;;                        # e.g., data/chr_list.txt
+    m) CHR_MAP_FILE="$OPTARG" ;;                    # e.g., data/chr_name_to_int.txt
+    o) OUTPUT_DIR="$OPTARG" ;;                      # optional 4th arg, defaults to current directory
+    \?) echo "Invalid option: -$OPTARG" >&2 ;;
+  esac
+done
+
+# Default output dir if not set
+OUTPUT_DIR="${OUTPUT_DIR:-.}"
 mkdir -p "$OUTPUT_DIR"
 
 # ====== Filenames without paths ======
@@ -16,6 +26,7 @@ FIXED_BIM="${OUTPUT_DIR}/${BASENAME}_fixed.bim"
 FINAL_BFILE="${OUTPUT_DIR}/${BASENAME}_final"
 FILTERED_BFILE="${OUTPUT_DIR}/${BASENAME}_filtered"
 INT_BFILE="${OUTPUT_DIR}/${BASENAME}_integer"
+CV_ERRORS="${OUTPUT_DIR}/cv_errors.txt
 
 # ====== 1. Fix .bim file ======
 echo "Fixing missing variant IDs in BIM file..."
@@ -62,6 +73,6 @@ done
 
 # ====== 6. Extract CV errors ======
 echo "Extracting CV errors..."
-grep -h "CV error" log*.out > cv_errors.txt
+grep -h "CV error" log*.out > "$CV_ERRORS"
 
-echo "All done ✅"
+echo "All done"

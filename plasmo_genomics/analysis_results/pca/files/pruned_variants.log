@@ -1,0 +1,29 @@
+PLINK v1.90p 64-bit (11 Dec 2023)
+Options in effect:
+  --allow-extra-chr
+  --bfile filtered_data
+  --extract pruned_data.prune.in
+  --make-bed
+  --out pruned_variants
+
+Hostname: Heebee.local
+Working directory: /Users/halimaabdulsalam/Plasmodium-WGS-ARISE/PlasmoGenomics/plasmo_genomics/analysis_results/pca
+Start time: Tue Apr 22 21:02:29 2025
+
+Random number seed: 1745352149
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+224802 variants loaded from .bim file.
+5 people (0 males, 0 females, 5 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to pruned_variants.nosex .
+--extract: 224802 variants remaining.
+Warning: At least 27316 duplicate IDs in --extract file.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 5 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.93267.
+224802 variants and 5 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to pruned_variants.bed + pruned_variants.bim + pruned_variants.fam
+... done.
+
+End time: Tue Apr 22 21:02:30 2025

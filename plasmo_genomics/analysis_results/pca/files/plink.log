@@ -1,0 +1,23 @@
+PLINK v1.90p 64-bit (11 Dec 2023)
+Options in effect:
+  --allow-extra-chr
+  --bfile haploid_variants
+  --missing
+
+Hostname: Heebee.local
+Working directory: /Users/halimaabdulsalam/Plasmodium-WGS-ARISE/PlasmoGenomics/plasmo_genomics/analysis_results/pca
+Start time: Tue Apr 22 21:02:30 2025
+
+Random number seed: 1745352150
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+224806 variants loaded from .bim file.
+5 people (0 males, 0 females, 5 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to plink.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 5 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.932653.
+--missing: Sample missing data report written to plink.imiss, and variant-based
+missing data report written to plink.lmiss.
+
+End time: Tue Apr 22 21:02:30 2025

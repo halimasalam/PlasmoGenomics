@@ -1,0 +1,29 @@
+PLINK v1.90p 64-bit (11 Dec 2023)
+Options in effect:
+  --allow-extra-chr
+  --make-bed
+  --out haploid_variants
+  --snps-only just-acgt
+  --vcf /Users/halimaabdulsalam/Plasmodium-WGS-ARISE/PlasmoGenomics_copy/plasmo_genomics/data/haploid_variants.vcf
+
+Hostname: Heebee.local
+Working directory: /Users/halimaabdulsalam/Plasmodium-WGS-ARISE/PlasmoGenomics/plasmo_genomics/analysis_results/pca
+Start time: Tue Apr 22 21:02:28 2025
+
+Random number seed: 1745352148
+16384 MB RAM detected; reserving 8192 MB for main workspace.
+--vcf: haploid_variants-temporary.bed + haploid_variants-temporary.bim +
+haploid_variants-temporary.fam written.
+224806 out of 339771 variants loaded from .bim file.
+5 people (0 males, 0 females, 5 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to haploid_variants.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 5 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.932653.
+224806 variants and 5 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to haploid_variants.bed + haploid_variants.bim +
+haploid_variants.fam ... done.
+
+End time: Tue Apr 22 21:02:29 2025

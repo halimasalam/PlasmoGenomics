@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # PCA Preprocessing Pipeline with PLINK
-# Usage: ./run_pca.sh -i high_quality_variants.vcf -o results/pca_output
+# Usage: ./run_pca.sh -i your.vcf -o results/pca_output
 
 set -euo pipefail
 
