@@ -1,9 +1,0 @@
-# Treat .P files as data, not OpenEdge ABL
-*.P linguist-language=Text
-*.p linguist-language=Text
-
-# Mark analysis result folders as generated
-plasmo_genomics/analysis_results/** linguist-generated=true
-
-# Make sure .py files count as Python
-*.py linguist-language=Python
